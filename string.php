@@ -22,7 +22,7 @@ function countVowels(string $word): int
     $count = 0;    
     $vowelArray = ['a','e','i','o','u'];
     foreach($vowelArray as $vowel){
-        if(str_contains($word, $vowel)){
+        if(str_contains(strtolower($word), $vowel)){
             $count++;
         }
     }
